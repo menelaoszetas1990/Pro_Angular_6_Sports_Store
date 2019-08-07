@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Runing the project
+
+Run the command `ng serve --port 3000 --open`
+
+## Running the RESTful Web Service
+
+Run at at a new command prompt `npm run json` inside the SportsStore folder
