@@ -1,12 +1,12 @@
 import { Directive, ViewContainerRef, TemplateRef, Input, Attribute, SimpleChanges, OnChanges } from '@angular/core';
 
 @Directive({
+  // tslint:disable-next-line: directive-selector
   selector: '[counterOf]'
 })
 export class CounterDirective implements OnChanges {
   constructor(private container: ViewContainerRef, private template: TemplateRef<Object>) {}
-  @Input('counterOf')
-  counter: number;
+  @Input('counterOf') counter: number;
   ngOnChanges(changes: SimpleChanges) {
     this.container.clear();
     for (let i = 0; i < this.counter; i++) {
