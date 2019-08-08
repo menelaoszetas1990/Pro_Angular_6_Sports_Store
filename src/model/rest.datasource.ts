@@ -47,7 +47,7 @@ export class RestDataSource {
     return this.http.post<Product>(this.baseUrl + 'products', product, this.getOptions());
   }
 
-  updateProduct(product): Observable<Product> {
+  updateProduct(product: Product): Observable<Product> {
     return this.http.put<Product>(`${this.baseUrl}products/${product.id}`, product, this.getOptions());
   }
 
@@ -64,7 +64,7 @@ export class RestDataSource {
   }
 
   updateOrder(order: Order): Observable<Order> {
-    return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`, this.getOptions());
+    return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`, order, this.getOptions());
   }
 
   // bind the token to the request
